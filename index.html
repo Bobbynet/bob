@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      div.bob{
+      background:orange;
+      width:300px;
+      height:80px;
+      position: absolute;
+    }
+    
+      .title{
+        font-size:20px;
+        font-family: Georgia;
+        position: absolute;
+        top:7px;
+        left:120px;
+      }
+      
+      .title2{
+        position: absolute;
+        top:30px;
+        left:140px;
+        font-family: Georgia;
+        font-size: 20px;
+      }
+      
+      .nav-bars{
+        position:absolute;
+        top:90px;
+        left:40px;
+        background-color: orange;
+      }
+      
+      .nav-bars > a{
+        outline: none;
+        text-decoration: none;
+        color:black;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Georgia;
+      }
+      
+      .nav-bars > a:hover {
+        border-bottom:2px solid red;
+        transition:1s;
+      }
+      
+      .bags{
+        width:300px;
+        height:100px;
+        background-color: white;
+        position: absolute;
+        color: black;
+        top:180px;
+        border: 2px solid orange;
+        border-radius:25px;
+      }
+      
+      .img1{
+        width:100px;
+        height:100px;
+        border-radius:25px;
+        position: absolute;
+        top:182px;
+        left:10px;
+      }
+      
+      .para{
+        color:black;
+        top:200px;
+        position: absolute;
+        left:150px;
+        font-weight: bold;
+        font-family: serif;
+        font-size:15px;
+      }
+      
+      .marquee{
+        direction: right;
+      }
+      
+      .slider1{
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background: white;
+        border: 2px solid orange;
+        position: absolute;
+        top:290px;
+        left:120px;
+      }
+      
+      .img2{
+        width:90px;
+        height: 90px;
+        visibility: hidden;
+      }
+      
+      .para2{
+        visibility: hidden;
+      }
+      
+      .slider1:hover > .img2{
+        visibility: visible;
+        border-radius:25px;
+        position: absolute;
+        top:-110px;
+        left:-113px;
+        transition: 2s;
+        height:100px;
+        width:100px;
+      }
+      
+      .slider1:hover > .para2{
+        visibility: visible;
+        top:-110px;
+        position: absolute;
+        right:-140px;
+        font-size: 20px;
+        font-weight: bold;
+        background: white;
+        transition: 2s;
+        font-family: serif;
+      }
+      
+      .slider2{
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background: white;
+        border: 2px solid orange;
+        position: absolute;
+        top:290px;
+        left:140px;
+      }
+      
+      .image3{
+        width:90px;
+        height:90px;
+        border-radius: 25%;
+        visibility: hidden;
+      }
+      
+      .para3{
+        visibility: hidden;
+      }
+      
+      .slider2:hover > .image3{
+        position: absolute;
+        top:-110px;
+        left:-133px;
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+        transition: 2s;
+      }
+      
+      .slider2:hover > .para3{
+        visibility: visible;
+        top:-110px;
+        position: absolute;
+        right:-140px;
+        font-size: 20px;
+        font-weight: bold;
+        background: white;
+        transition: 2s;
+        font-family: serif;
+      }
+      
+        .slider3{
+          width:10px;
+          height:10px;
+          border-radius:50%;
+          background: white;
+          border: 2px solid orange;
+          position: absolute;
+          top:290px;
+          left:160px;
+        }
+        
+        .image4{
+        width:90px;
+        height:90px;
+        border-radius:25px;
+        visibility: hidden;
+      }
+      
+      .para4{
+        visibility: hidden;
+      }
+      
+      .slider3:hover > .image4{
+        position: absolute;
+        top:-110px;
+        left:-152px;
+        visibility: visible;
+        width: 100px;
+        height: 100px;
+        transition: 2s;
+      }
+      
+      .slider3:hover > .para4{
+        visibility: visible;
+        top:-100px;
+        position: absolute;
+        right:-60px;
+        font-size: 20px;
+        font-weight: bold;
+        background: white;
+        transition: 2s;
+        font-family: serif;
+      }
+      
+      .marquee{
+        top:130px;
+        position: absolute;
+      }
+      
+      .topproducts{
+        font-size:20px;
+        color:black;
+        position: absolute;
+        top:320px;
+        font-weight: bold;
+        font-family: Georgia;
+      }
+      
+      .arrow{
+        width:50px;
+        height: 50px;
+        position: absolute;
+        top:330px;
+        left:250px;
+      }
+      
+      .product1{
+        position: absolute;
+        top:370px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+      .parara{
+        position: absolute;
+        top:460px;
+        left:40px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+      .parara2{
+        position: absolute;
+        top:470px;
+        left:32px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+      .product1:hover{
+        opacity:0.6;
+        transition: 1s;
+      }
+      
+      .product2{
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        position: absolute;
+        top: 370px;
+        left:150px;
+        border: 2px solid orange;
+      }
+      
+      .bandana{
+        position: absolute;
+        top:460px;
+        left:185px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+       .bandana2{
+        position: absolute;
+        top:470px;
+        left:175px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+      .buttonb{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:520px;
+        outline:none;
+        border: none;
+        left:15px;
+      }
+      
+      .product2:hover{
+        opacity: 0.6;
+        transition: 1s;
+      }
+      
+        .buttona{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:520px;
+        outline:none;
+        border: none;
+        left:155px;
+      }
+      
+      .product3{
+        position: absolute;
+        top:550px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+      .pricetag{
+        position: absolute;
+        top:640px;
+        left:40px;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      
+      .pric{
+        font-weight: bold;
+        font-size: 20px;
+        left:32px;
+        top:650px;
+        position: absolute;
+      }
+      
+      .product3:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+      .product4{
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        position: absolute;
+        top: 550px;
+        left:150px;
+        border: 2px solid orange;
+      }
+      
+      .product4:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .price{
+        position: absolute;
+        top:640px;
+        left:190px;
+        font-weight: bold;
+        font-size: 15px;
+        }
+        
+        .lot{
+        position: absolute;
+        top:650px;
+        left:180px;
+        font-weight: bold;
+        font-size: 20px;
+        }
+        
+        .buttonh{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:700px;
+        outline:none;
+        border: none;
+        left:15px;
+      }
+      
+        .buttong{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:700px;
+        outline:none;
+        border: none;
+        left:155px;
+      }
+      
+      .hplot{
+        top:700px;
+        position: absolute;
+        color:orange;
+      }
+      
+      .ba{
+        font-size:20px;
+        color:black;
+        position: absolute;
+        top:750px;
+        font-weight: bold;
+        font-family: Georgia;
+      }
+      
+      .bag1{
+        position: absolute;
+        top:800px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+        .ban{
+        position: absolute;
+        top:890px;
+        left:35px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+       .ban2{
+        position: absolute;
+        top:900px;
+        left:27px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+      .bag1:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+      .arrow2{
+        width:50px;
+        height: 50px;
+        position: absolute;
+        top:765px;
+        left:250px;
+      }
+      
+        .bag2{
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        position: absolute;
+        top: 800px;
+        left:150px;
+        border: 2px solid orange;
+      }
+      
+       .bag22{
+        position: absolute;
+        top:890px;
+        left:180px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+       .bag222{
+        position: absolute;
+        top:900px;
+        left:173px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+      .bag2:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .buttonl{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:950px;
+        outline:none;
+        border: none;
+        left:15px;
+      }
+      
+        .buttonn{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:950px;
+        outline:none;
+        border: none;
+        left:155px;
+      }
+      
+      .josh{
+        top: 960px;
+        position: absolute;
+        color: orange;
+      }
+      
+      .josh:hover{
+        transition: 1s;
+        color:orange;
+      }
+      
+        .slipper{
+        font-size:20px;
+        color:black;
+        position: absolute;
+        top:1010px;
+        font-weight: bold;
+        font-family: Georgia;
+      }
+      
+        .arrow3{
+        width:50px;
+        height: 50px;
+        position: absolute;
+        top:1015px;
+        left:250px;
+      }
+      
+        .palm{
+        position: absolute;
+        top:1060px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+      .palm:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .bata{
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        position: absolute;
+        top: 1060px;
+        left:150px;
+        border: 2px solid orange;
+      }
+      
+      .bata:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .bata2{
+        position: absolute;
+        top:1151px;
+        left:180px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+        .bata3{
+        position: absolute;
+        top:1161px;
+        left:173px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+        .bata4{
+        position: absolute;
+        top:1151px;
+        left:35px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+       .bata5{
+        position: absolute;
+        top:1161px;
+        left:27px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+        .mybutton{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:1205px;
+        outline:none;
+        border: none;
+        left:15px;
+      }
+      
+        .hisbutton{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:1205px;
+        outline:none;
+        border: none;
+        left:155px;
+      }
+      
+        .bat10{
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        position: absolute;
+        top: 1235px;
+        left:10px;
+        border: 2px solid orange;
+      }
+      
+      .bat10:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .bat11{
+        position: absolute;
+        top:1325px;
+        left:40px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+        .bat12{
+        position: absolute;
+        top:1335px;
+        left:30px;
+        font-size:20px ;
+        font-weight: bold;
+      }
+      
+        .bad{
+        position: absolute;
+        top:1240px;
+        left:150px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+        .bad{
+        position: absolute;
+        top:1240px;
+        left:150px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+      .bad:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .pack{
+        position: absolute;
+        top:1330px;
+        left:180px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+      .packa{
+        position: absolute;
+        top:1338px;
+        left:173px;
+        font-size:20px ;
+        font-weight: bold;
+      }
+      
+        .herbutton{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:1385px;
+        outline:none;
+        border: none;
+        left:15px;
+      }
+      
+        .block{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:1385px;
+        outline:none;
+        border: none;
+        left:155px;
+      }
+      
+        .let{
+        color: orange;
+        top:1390px;
+        position: absolute;
+      }
+      
+        .clog{
+        font-size:20px;
+        color:black;
+        position: absolute;
+        top:1440px;
+        font-weight: bold;
+        font-family: Georgia;
+      }
+      
+      .clogo:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .arrow4{
+        width:50px;
+        height: 50px;
+        position: absolute;
+        top:1445px;
+        left:250px;
+      }
+      
+       .clogo{
+        position: absolute;
+        top:1485px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+        .clogging{
+        position: absolute;
+        top:1575px;
+        left:40px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+        .clago{
+        position: absolute;
+        top:1585px;
+        left:30px;
+        font-size:20px ;
+        font-weight: bold;
+      }
+      
+        .hole{
+        position: absolute;
+        top:1485px;
+        left:150px;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 2px solid orange;
+      }
+      
+      .hole:hover{
+        transition: 1s;
+        opacity: 0.6;
+      }
+      
+        .bole{
+        position: absolute;
+        top:1575px;
+        left:180px;
+        font-size:15px ;
+        font-weight: bold;
+      }
+      
+        .clone{
+        position: absolute;
+        top:1583px;
+        left:175px;
+        font-size:20px ;
+        font-weight: bold;
+      }
+      
+        .opbutton{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:1629px;
+        outline:none;
+        border: none;
+        left:155px;
+      }
+      
+        .buttonsepe{
+        background: orange;
+        color:white;
+        position: absolute;
+        top:1629px;
+        outline:none;
+        border: none;
+        left:15px;
+      }
+      
+      .bet{
+        color: orange;
+        position: absolute;
+        top:1635px;
+      }
+      
+      .box1{
+        background-color: orange;
+        color: white;
+        outline: none;
+        top:1700px;
+        position: absolute;
+        width:40px;
+        height: 30px;
+        left:15px;
+        text-align: center;
+        font-size: 15px;
+      }
+      
+        .box2{
+        background-color: white;
+        color: orange;
+        border: 2px solid orange;
+        outline: none;
+        top:1700px;
+        position: absolute;
+        width:40px;
+        height: 30px;
+        left:70px;
+        text-align: center;
+        font-size: 15px;
+      }
+      
+      .box2:hover{
+        transition: 1s;
+        background-color: orange;
+        color:white;
+      }
+      
+        .box3{
+        background-color: white;
+        color: orange;
+        outline: none;
+        top:1700px;
+        position: absolute;
+        width:40px;
+        height: 30px;
+        left:115px;
+        text-align: center;
+        font-size: 15px;
+        border: 2px solid orange;
+      }
+      
+      .box3:hover{
+        transition: 1s;
+        color:white;
+        background-color: orange;
+      }
+      
+        .box4{
+        background-color: white;
+        color: orange;
+        outline: none;
+        top:1700px;
+        position: absolute;
+        width:40px;
+        height: 30px;
+        left:160px;
+        text-align: center;
+        font-size: 15px;
+        border: 2px solid orange;
+      }
+      
+      .box4:hover{
+        transition: 1s;
+        color:white;
+        background-color: orange;
+      }
+      
+        .box5{
+        background-color: white;
+        color: orange;
+        outline: none;
+        top:1700px;
+        position: absolute;
+        width:40px;
+        height: 30px;
+        left:205px;
+        text-align: center;
+        font-size: 15px;
+        border: 2px solid orange;
+      }
+      
+      .box5:hover{
+        transition: 1s;
+        color:white;
+        background-color: orange;
+      }
+      
+      .box6{
+        color:orange;
+        top:1710px;
+        left:250px;
+        position: absolute;
+        font-size:25px;
+      }
+      
+        .box37{
+        background-color: white;
+        color: orange;
+        outline: none;
+        top:1700px;
+        position: absolute;
+        width:40px;
+        height: 30px;
+        left:275px;
+        text-align: center;
+        font-size: 15px;
+        border: 2px solid orange;
+      }
+      
+      .box37:hover{
+        transition: 1s;
+        color:white;
+        background-color: orange;
+      }
+      
+      .flt{
+        color: orange;
+        top:1710px;
+        position: absolute;
+      }
+      
+      .links{
+        color:orange;
+        position: absolute;
+        top:1770px;
+      }
+      
+      .links > a{
+        color: orange;
+        outline: none;
+        text-decoration: none;
+        border: none;
+        word-spacing:60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bob">
+    <h1 class="title">Bobbynet</h1>
+  <h1 class="title2">Store</h1>
+  </div>
+  <div class="nav-bars">
+    <a href="#">Home</a>
+    <a href="#">Shoes</a>
+    <a href="#">Clothes</a>
+    <a href="#">Bags</a>
+  </div>
+  <div class="marquee"><marquee>Place order now and get free delivery nation wide</marquee></div>
+  <div class="slider">
+  <div class="bags">
+    </div>
+<img src="image/shoe1.jpg" class="img1">
+  <p class="para">Hot Shoes <br>For Children <b>></b></p>
+    <div class="slider1">
+      <img src="image/jean.jpg" class="img2">
+      <p class="para2">Hot Jean<br> For Womens<b>></b></p>
+    </div>
+    <div class="slider2">
+      <img src="image/cloth.jpg" class="image3">
+      <p class="para3">New Designers For Guys <b>></b></p>
+    </div>
+    <div class="slider3">
+      <img src="image/fashionslippers.jpg" class="image4">
+      <p class="para4">Slippers For Ladies<b>></b></p>
+      </div>
+  </div>
+  <p class="topproducts">Top Products</p>
+  <img src="image/download.jpeg.jpg" class="arrow">
+  <img src="image/Blackshoe.jpg" class="product1">
+  <p class="parara">$20</p>
+  <p class="parara2">Only</p>
+  <img src="image/shoe1.jpg" class="product2">
+  <p class="bandana">$33</p>
+  <p class="bandana2">Only</p>
+  <button class="buttonb"
+type="submit">Add To Carts </button>
+<button class="buttona">Add To Carts</button>
+<img src="image/cloth.jpg" class="product3">
+<h3 class="pricetag">$15</h3>
+<p class="pric">Only</p>
+<img src="image/jean.jpg" class="product4">
+<p class="price">$21</p>
+<p class="lot">Only</p>
+<button class="buttonh">Add To Carts</button>
+<button class="buttong">Add To Carts</button>
+<div class="hplot">
+  <h1>_____________________</h1>
+</div>
+<p class="ba">Bags</p>
+<img src="image/bag.jpg" class="bag1">
+<p class="ban">$15</p>
+<p class="ban2">Only</p>
+<img src="image/download.jpeg.jpg" class="arrow2">
+<img src="image/beautiful.jpg" class="bag2">
+<p class="bag22">$26</p>
+<p class="bag222">Only</p>
+<button class="buttonl">Add To Carts</button>
+<button class="buttonn">Add To Carts</button>
+ <h1 class="josh">_____________________</h1>
+ <p class="slipper">Slippers</p>
+ <img src="image/download.jpeg.jpg" class="arrow3">
+ <img src="image/palm.jpg" class="palm">
+ <img src="image/dryslippers.jpg" class="bata">
+ <p class="bata2">$17</p>
+ <p class="bata3">Only</p>
+ <p class="bata4">$12</p>
+ <p class="bata5">Only</p>
+ <button class="mybutton">Add To Carts</button>
+ <button class="hisbutton">Add To Carts</button>
+ <img src="image/slipper.jpg" class="bat10">
+ <p class="bat11">$9</p>
+ <p class="bat12">Only</p>
+ <img src="image/cutee.jpg" class="bad">
+ <p class="pack">$11</p>
+ <p class="packa">Only</p>
+ <button class="herbutton">Add To Carts</button>
+ <button class="block">Add To Carts</button>
+ <h1 class="let">_____________________</h1>
+ <p class="clog">Designers</p>
+ <img src="image/download.jpeg.jpg" class="arrow4">
+ <img src="image/clog.jpg" class="clogo">
+ <p class="clogging">$10</p>
+ <p class="clago">Only</p>
+ <img src="image/designer.jpg" class="hole">
+ <p class="bole">$25</p>
+ <p class="clone">Only</p>
+ <button class="opbutton">Add To Carts</button>
+ <button class="buttonsepe">Add To Carts</button>
+ <h1 class="bet">_____________________</h1>
+ <div class="boxes">
+ <div class="box1">1</div>
+ <div class="box2">2</div>
+ <div class="box3">3</div>
+ <div class="box4">4</div>
+ <div class="box5">5</div>
+ <div class="box6">...</div>
+ <div class="box37">37</div>
+ <h1 class="flt">_____________________</h1>
+ </div>
+ <div class="links">
+   <a href="#">About</a>
+   <a href="#">Contact</a>
+   <a href="#">Policy</a>
+   <a href="#">Sponsorship</a>
+ </div>
+ </body>
+</html>
